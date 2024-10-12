@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.background {
+    width:100%;
+    height:100vh;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.sunn {
+    position: absolute;
+    left: 847px;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation: sunanimation 5s infinite;
+}
+
+@keyframes sunanimation {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.tree {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    bottom: 350px;
+    right: 50px;
+    animation-duration: 1s;
+    animation: treeanimation 1s infinite;
+}
+
+@keyframes treeanimation {
+    from {
+        transform: translatex(1200px);
+    }
+
+    to {
+        transform: translatex(-1300px);
+    }
+}
+
+.mario1 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    left: 50px;
+    bottom: 150px;
+    animation-duration: 3s;
+    animation: mario1animation 5s infinite;
+}
+
+@keyframes mario1animation {
+    from {
+        transform: translatex(-1300px);
+    }
+
+    to {
+        transform: translatex(1100px)
+    }
+}
+
+.mario2 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    right: 15px;
+    bottom: 40px;
+    animation-duration: 3s;
+    animation: mario2animation 5s infinite;
+}
+
+@keyframes mario2animation {
+    from {
+        transform: translatex(100px)
+    }
+
+    to {
+        transform: translatex(-1000px);
+    }
+}
